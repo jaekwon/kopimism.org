@@ -28,10 +28,18 @@
       # Aaron Swartz is a saint in Kopimism
       
       # Link to Guerilla Open Access Manifesto in multiple languages
-      @a href:"http://openaccessmanifesto.org/", ->
-        @marked """
-          Read the Guerilla Open Access Manifesto in languages other than English
-          """
+      @article ->
+        @a href:"http://openaccessmanifesto.org/manifesto-da-guerilha-pelo-acesso-aberto/", "Português"
+        @a href:"http://openaccessmanifesto.org/%E6%B8%B8%E5%87%BB%E9%98%9F%E5%BC%80%E6%94%BE%E8%AE%BF%E9%97%AE%E5%AE%A3%E8%A8%80/", "中文"
+        @a href:"http://openaccessmanifesto.org/manifeste-de-la-guerilla-pour-le-libre-acces/", "Français"
+        @a href:"http://openaccessmanifesto.org/manifesto-per-la-resistenza-open-access/", "Italiano"
+        @a href:"http://openaccessmanifesto.org/partizanu-brivpieejas-manifests/", "Latviešu"
+        @a href:"http://openaccessmanifesto.org/manifiesto-de-la-guerrilla-por-el-acceso-abierto/", "Español"
+        @a href:"http://openaccessmanifesto.org/gerila-open-access-manifest/", "Srpski"
+        @a href:"http://openaccessmanifesto.org/%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BC%D0%B0%D0%BD%D0%B8%D1%84%D0%B5%D1%81%D1%82-%D0%BE%D0%B1-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%BC-%D0%B4%D0%BE/", "Русский"
+        @a href:"http://openaccessmanifesto.org/manifest-des-guerilla-open-access/", "Deutsch"
+        @a href:"http://openaccessmanifesto.org/gerilla-acik-erisim-manifestosu/", "Türkçe"
+        @a href:"http://openaccessmanifesto.org/", "..."
       
       # Copy of manifesto in English
       @article ->
