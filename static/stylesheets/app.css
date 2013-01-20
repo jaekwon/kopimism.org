@@ -1,0 +1,7 @@
+article {
+  max-width: 800px;
+  margin: 0px auto;
+  clear: both;
+  border-bottom: 4px solid #DDDDDD;
+  overflow: auto;
+}

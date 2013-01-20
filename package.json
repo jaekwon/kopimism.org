@@ -1,0 +1,22 @@
+{
+  "name": "kopimism.org",
+  "description": "Website for the Oakland fork of Kopimism",
+  "version": "0.0.1",
+  "author": "Jae Kwon <jkwon.work@gmail.com>",
+  "repository": {"type": "git", "url": "git://github.com/jaekwon/kopimism.org.git"},
+  "dependencies": {
+      "connect":      "2.6.0",
+      "cookie":       "0.0.4",
+      "express":      ">= 3.0.0",
+      "async":        "0.1.22",
+      "sugar":        "1.2.5",
+      "cardamom":     "0.0.9d",
+      "nogg":         "0.0.8",
+      "coffeemugg":   "0.0.5",
+      "marked":       ">= 0.2.7"
+    },
+  "keywords": [],
+  "engines": {"node": ">= 0.8.2"},
+  "contributors": [
+  ]
+}
