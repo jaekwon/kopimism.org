@@ -27,4 +27,5 @@ $ cake server
 * __templating__: https://github.com/jaekwon/coffeemugg
 * __markdown__: https://github.com/chjj/marked
 * __framework__: https://github.com/visionmedia/express
-* __todos, issues, suggestions__: https://github.com/jaekwon/kopimism.org/issues
+* __issues, suggestions__: https://github.com/jaekwon/kopimism.org/issues
+* __IRC__: ##kopimism
