@@ -26,6 +26,14 @@
           """
 
       # Aaron Swartz is a saint in Kopimism
+      
+      # Link to Guerilla Open Access Manifesto in multiple languages
+      @a href:"http://openaccessmanifesto.org/", ->
+        @marked """
+          Read the Guerilla Open Access Manifesto in languages other than English
+          """
+      
+      # Copy of manifesto in English
       @article ->
         @marked """
           Information is power. But like all power, there are those who want to keep it for themselves. The world’s entire scientific and cultural heritage, published over centuries in books and journals, is increasingly being digitized and locked up by a handful of private corporations. Want to read the papers featuring the most famous results of the sciences? You’ll need to send enormous amounts to publishers like Reed Elsevier.
