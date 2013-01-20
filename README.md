@@ -20,7 +20,7 @@ $ npm install .
 
 Then, run the server.
 ``` bash
-$ coffee server
+$ cake server
 ```
 
 ## More resources
