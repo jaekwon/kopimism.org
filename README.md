@@ -1,4 +1,3 @@
-
 # Kopimism.org
 
 This is the source for kopimism.org.
@@ -28,3 +27,4 @@ $ cake server
 * __templating__: https://github.com/jaekwon/coffeemugg
 * __markdown__: https://github.com/chjj/marked
 * __framework__: https://github.com/visionmedia/express
+* __todos, issues, suggestions__: https://github.com/jaekwon/kopimism.org/issues
