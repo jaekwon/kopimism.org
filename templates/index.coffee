@@ -10,6 +10,9 @@
 
     @body ->
 
+      # see plugins/partials.coffee to see what this is about.
+      # @partial '_fruitlist', ['apple', 'pear', 'banana']
+
       # Header, Logo
       @article ->
         @img style:"border: 0; height: 100px;", src:"/images/Kopimi_k.svg.png", alt:"{% Kopimism %}"

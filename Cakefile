@@ -6,6 +6,9 @@ sugar = require 'sugar'
 task 'scss', ->
   run 'sass --watch static/stylesheets/:static/stylesheets/'
 
+task 'debug', 'Run the debug server', ->
+  run 'coffee --nodejs --debug server'
+
 task 'server', 'Run the server', ->
   run 'coffee server'
 

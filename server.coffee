@@ -1,7 +1,4 @@
-{
-  clazz, hotswap,
-  colors:{red, blue, cyan, magenta, green, normal, black, white, yellow}
-} = require 'cardamom'
+{hotswap} = require 'cardamom'
 http    = require 'http'
 express = require 'express'
 log     = require('nogg').logger('server')
@@ -41,7 +38,8 @@ app.use express.bodyParser()
 # }
 
 ## CoffeeMugg (templating engine) plugins
-cm.install_plugin require('./plugins/cm_marked').MarkedPlugin
+cm.install_plugin require('./plugins/marked')
+cm.install_plugin require('./plugins/partials')(require, './templates')
 
 ## Request handling
 app.get '/', (req, res) ->
