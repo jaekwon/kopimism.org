@@ -1,14 +1,45 @@
-# A CoffeeMugg plugin for partials
-#   dir: The base directory.
-# Usage:
-#   cm = require 'coffeemugg'
-#   cm.install_plugin require('plugins/partials')('./templates')
-#
+###
+
+A CoffeeMugg plugin for partials
+
+Options:
+  _require: pass in a require.
+  dir: The base directory.
+  tag: The name to give this tag, default '@partial'
+
+Usage:
+
+  -- ./helloworld.coffee --
+
+  cm = require 'coffeemugg'
+  cm.install_plugin require('plugins/partials')(require, './templates')
+  
+  template = ->
+    @html ->
+      @body ->
+        @partial '_mypartial', arg1, arg2
+  
+  cm.render template
+
+  -- ./templates/_mypartial.coffee --
+
+  @partial = (arg1, arg2) ->
+    @p "#{arg1} #{arg2}"
+
+###
+
 
 {hotswap} = require 'cardamom'
 
-module.exports = (_require, dir, tag='partial') -> ->
+# This function returns the "plugin installer"
+module.exports = (_require, dir, tag='partial') ->
 
-  @[tag] = partialTag = (partialName, args...) ->
+  # This is the "plugin installer"
+  ->
 
-    hotswap(_require, "#{dir}/#{partialName}").partial.apply(@, args)
+    # This is the "@partial" tag, or whatever you named it.
+    @[tag] = (partialName, args...) ->
+
+      hotswap(_require, "#{dir}/#{partialName}").partial.apply(@, args)
+
+      null
