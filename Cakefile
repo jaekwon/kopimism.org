@@ -10,7 +10,7 @@ task 'debug', 'Run the debug server', ->
   run 'coffee --nodejs --debug server'
 
 task 'server', 'Run the server', ->
-  run 'coffee server'
+  run 'coffee server.coffee'
 
 run = (args...) ->
   for a in args
